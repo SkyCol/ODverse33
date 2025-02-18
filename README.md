@@ -42,7 +42,7 @@ Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
 
     
 
-Exprimental results for 11 diverse domains can be found in the paper.
+More detailed results for 11 diverse domains and 33 datasets can be found in the paper.
 
 
 
