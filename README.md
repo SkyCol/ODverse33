@@ -9,17 +9,10 @@ paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
 
 **ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains**. These domains are:
 
-- **Autonomous Driving**
-- **Agricultural**
-- **Underwater**
-- **Medical**
-- **Video Games**
-- **Industrial**
-- **Aerial**
-- **Wildlife**
-- **Retail**
-- **Microscopic**
-- **Security**
+**Autonomous Driving**, **Agricultural**, **Underwater**,  
+**Medical**, **Video Games**, **Industrial**,  
+**Aerial**, **Wildlife**, **Retail**,  
+**Microscopic**, and **Security**.
 
 This benchmark provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5** to **YOLOv11**. 
 
