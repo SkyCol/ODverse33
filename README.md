@@ -1,7 +1,7 @@
 # ODverse33
 
 ### Paper
-paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11**" can be found at [*Arxiv*](#).
+paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11**" can be found at [*Arxiv*](#). This benchmark provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5** to **YOLOv11**. 
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/296d5550-90f0-4205-9d5b-e7b9545aed4a" width="800" height="auto">
@@ -32,8 +32,6 @@ paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
   </tr>
 </table>
 
-
-This benchmark provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5** to **YOLOv11**. 
 
 
 
