@@ -9,7 +9,7 @@ paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
 
 **ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains** :
 
-<table align="left">
+<table>
   <tr>
     <td>Autonomous Driving</td>
     <td>Agricultural</td>
