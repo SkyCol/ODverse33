@@ -41,12 +41,7 @@ Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
 
 
 
-Exprimental results for 11 these domains are shown as follows.
-
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/d17b269c-ac87-459e-9799-b29ac07864de" width="80%" height="auto">
-</p>
-
+Exprimental results for 11 these domains can be found in the paper
 
 
 
