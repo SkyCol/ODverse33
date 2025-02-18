@@ -35,6 +35,8 @@ Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
   </tr>
 </table>
 
+![image](https://github.com/user-attachments/assets/fa75fe94-32ef-41c5-af05-6a2fd37ba6b0)
+
 
 
 
