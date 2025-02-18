@@ -34,6 +34,7 @@ Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
   </tr>
 </table>
 
+Exprimental results for 11 these domains are shown as follows.
 
 
 
