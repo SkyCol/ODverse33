@@ -12,7 +12,7 @@ paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
 **Autonomous Driving**, **Agricultural**, **Underwater**,  
 **Medical**, **Video Games**, **Industrial**,  
 **Aerial**, **Wildlife**, **Retail**,  
-**Microscopic**, and **Security**.
+**Microscopic**, **Security**.
 
 This benchmark provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5** to **YOLOv11**. 
 
