@@ -1,7 +1,8 @@
 # ODverse33
 
-![image](https://github.com/user-attachments/assets/3a96739b-d80e-4d11-89a4-659ee733eb7c)
-
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/3a96739b-d80e-4d11-89a4-659ee733eb7c" width="800" height="auto">
+</p>
 
 Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11**" can be found at [*Arxiv*](#). This benchmark provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5** to **YOLOv11**. 
 
