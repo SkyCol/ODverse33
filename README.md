@@ -5,4 +5,5 @@ mous driving, Agricultural, Underwater, Medical, Video games, Industrial, Aer
 ial, Wildlife, Retail, Microscopic, and Security). Here we make a multi-domain benchmark for YOLO series from YOLOv5 through YOLOv11.
 
 
-![image](https://github.com/user-attachments/assets/a4c9a12d-bc08-441a-b656-851d3eaceea2)
+![image](https://github.com/user-attachments/assets/296d5550-90f0-4205-9d5b-e7b9545aed4a)
+
