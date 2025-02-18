@@ -1,12 +1,20 @@
 # ODverse33
 
-ODverse33 includes 33 datasets spanning 11 diverse domains (Autono
-mous driving, Agricultural, Underwater, Medical, Video games, Industrial, Aer
-ial, Wildlife, Retail, Microscopic, and Security). Here we make a multi-domain benchmark for YOLO series from YOLOv5 through YOLOv11.
+**ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains**. These domains are:
 
-Paper entitled "ODVerse33: Is the New YOLO Version Always Better?
-A Multi Domain benchmark from YOLO v5 to v11
-" can be find at [*Arxiv*]()   
+- **Autonomous Driving**
+- **Agricultural**
+- **Underwater**
+- **Medical**
+- **Video Games**
+- **Industrial**
+- **Aerial**
+- **Wildlife**
+- **Retail**
+- **Microscopic**
+- **Security**
+
+This benchmark provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5** to **YOLOv11**. 
 
 
 <p align="center">
