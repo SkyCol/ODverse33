@@ -9,6 +9,11 @@ Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
   <img src="https://github.com/user-attachments/assets/296d5550-90f0-4205-9d5b-e7b9545aed4a" width="800" height="auto">
 </p>
 
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/7830d3e1-19ae-477b-9565-faa515b378d8" width="80%" height="auto">
+</p>
+
+
 **ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains** :
 
 <table>
@@ -35,11 +40,10 @@ Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
 </table>
 
 
+
 Exprimental results for 11 these domains are shown as follows.
 
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/bc8ebf32-24d8-4c50-9511-1175a274a746" width="70%" height="auto">
-</p>
+
 
 
 
