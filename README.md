@@ -17,7 +17,7 @@ paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
   </tr>
   <tr>
     <td>Medical</td>
-    <td>Video Games</td>
+    <td>Videogame</td>
     <td>Industrial</td>
   </tr>
   <tr>
