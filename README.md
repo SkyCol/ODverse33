@@ -7,7 +7,7 @@ paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Doma
   <img src="https://github.com/user-attachments/assets/296d5550-90f0-4205-9d5b-e7b9545aed4a" width="600" height="auto">
 </p>
 
-**ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains**. These domains are:
+**ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains** :
 
 <table align="center">
   <tr>
