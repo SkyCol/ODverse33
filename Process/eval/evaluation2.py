@@ -2,60 +2,55 @@ import os
 import torch
 import pandas as pd
 from ultralytics import YOLO
-from thop import profile  # 用于计算 FLOPs 和参数数量
+from thop import profile  # For calculating FLOPs and parameter count
 
-# 设置根目录和数据集的 YAML 文件路径
+# Set root directory and dataset YAML path
 root_dir = r"D:\YOLO_Benchmark\saved_models\BCCD"
-data_yaml = r"D:\YOLO_Benchmark\medical\BCCD\BCCD\data.yaml"  # 请根据实际情况修改
+data_yaml = r"D:\YOLO_Benchmark\medical\BCCD\BCCD\data.yaml"  # Modify as needed
 
-# 存储所有评估结果的列表
+# List to store all evaluation results
 all_results = []
 
-# 遍历根目录下的所有子目录
+# Walk through all subdirectories under the root directory
 for subdir, _, files in os.walk(root_dir):
-    # 检查子目录是否包含 weights/best.pt 文件
+    # Check if 'weights/best.pt' exists in the directory
     if 'weights' in subdir and 'best.pt' in files:
         model_path = os.path.join(subdir, 'best.pt')
-        
-        # 获取模型名称（例如 "BCCD_yolo8n"）
         model_name = os.path.basename(os.path.dirname(subdir))
 
-        # 打印模型名称和路径
-        print(f"正在评估模型: {model_name} - 路径: {model_path}")
+        print(f"Evaluating model: {model_name} - Path: {model_path}")
 
-        # 加载模型
+        # Load the YOLO model
         model = YOLO(model_path)
 
-        # 计算参数数量
+        # Calculate parameter count
         params = sum(p.numel() for p in model.model.parameters())
-        params_in_million = params / 1e6  # 参数数量（百万）
+        params_in_million = params / 1e6
 
-        # 计算 FLOPs
-        input = torch.randn(1, 3, 640, 640)  # 根据模型输入尺寸调整
-        flops, _ = profile(model.model, inputs=(input, ), verbose=False)
-        flops_in_gflops = flops / 1e9  # FLOPs（GFLOPs）
+        # Calculate FLOPs
+        input = torch.randn(1, 3, 640, 640)
+        flops, _ = profile(model.model, inputs=(input,), verbose=False)
+        flops_in_gflops = flops / 1e9
 
-        # 在测试集上进行评估
+        # Run evaluation on the test set
         test_results = model.val(
             data=data_yaml,
             split='test',
             imgsz=640,
-            device="cuda",  # 使用 GPU
+            device="cuda",
             workers=0
         )
 
-        # 从 box 对象中获取评估结果，包括 mAP@50 和 mAP@50-95
+        # Get overall metrics
         mp, mr, map50, map50_95 = test_results.box.mean_results()
+        class_maps = test_results.box.maps  # Per-class mAP array
 
-        # 获取每个类的 mAP
-        class_maps = test_results.box.maps  # maps 是一个 NumPy 数组，包含每个类别的 mAP 值
+        # Define class groups for small, medium, and large objects
+        small_classes = [0]   # e.g., Platelets
+        medium_classes = [1]  # e.g., RBC
+        large_classes = [2]   # e.g., WBC
 
-        # 假设类别已经按照 Small, Medium, Large 分组
-        small_classes = [0]  # Small 类别的索引，例如 "Platelets"
-        medium_classes = [1]  # Medium 类别的索引，例如 "RBC"
-        large_classes = [2]  # Large 类别的索引，例如 "WBC"
-
-        # 计算 Small, Medium, Large 的 mAP
+        # Compute mAP for each group
         map_small = (
             sum(class_maps[c] for c in small_classes if c < len(class_maps)) / len(small_classes)
             if small_classes else None
@@ -69,7 +64,7 @@ for subdir, _, files in os.walk(root_dir):
             if large_classes else None
         )
 
-        # 保存当前模型的评估结果
+        # Collect results
         detailed_results = {
             "Model": model_name,
             "Mean Precision": mp,
@@ -83,24 +78,21 @@ for subdir, _, files in os.walk(root_dir):
             "Parameters (M)": params_in_million,
             "FLOPs (GFLOPs)": flops_in_gflops
         }
-        
-        # 将当前模型的评估结果添加到总结果列表
+
         all_results.append(detailed_results)
 
-        # 输出评估结果
-        print(f"{model_name} 测试集评估结果:")
+        # Print the current model's results
+        print(f"{model_name} Evaluation Results:")
         print(pd.DataFrame([detailed_results]))
         print("\n" + "-" * 50 + "\n")
 
-# 如果找到有效的模型评估结果，则合并并保存
+# Save results if any valid models were found
 if all_results:
     final_results_df = pd.DataFrame(all_results)
     save_dir = r"D:\YOLO_Benchmark\saved_evaluation"
-    if not os.path.exists(save_dir):
-        os.makedirs(save_dir)
+    os.makedirs(save_dir, exist_ok=True)
     save_path = os.path.join(save_dir, f"yolo_models_evaluation_{os.path.basename(root_dir.rstrip(os.sep))}.xlsx")
     final_results_df.to_excel(save_path, index=False)
-    print(f"所有模型的评估结果已保存至: {save_path}")
+    print(f"All model evaluation results have been saved to: {save_path}")
 else:
-    print("未找到任何符合条件的模型文件进行评估。")
-### small and v6 adjustment complete happy I have a good day
+    print("No valid model files found for evaluation.")
