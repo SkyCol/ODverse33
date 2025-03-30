@@ -1,10 +1,9 @@
-import torch
+import os
+import subprocess
 import random
 import numpy as np
-from ultralytics import YOLO
-import os
+import torch
 
-# 设置随机种子
 def set_seed(seed=42):
     random.seed(seed)
     np.random.seed(seed)
@@ -13,51 +12,39 @@ def set_seed(seed=42):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-# 调用种子设置函数
 set_seed(42)
 
-# 多个根目录列表
+# Root dataset directories
 root_dirs = [
     r"D:\YOLO_Benchmark\medical\brain-tumor",
-    # 可以继续添加其他根目录
+    # Add more if needed
 ]
 
-# 循环遍历每个根目录并进行训练
+# YOLOv7 training script path
+yolov7_dir = r"D:\YOLO_Benchmark\yolov7"  # path to cloned yolov7 repo
+train_script = os.path.join(yolov7_dir, "train.py")
+
+# Loop over each dataset
 for root_dir in root_dirs:
-    # 数据集 YAML 文件路径
-    data_yaml_path = os.path.join(root_dir, "data.yaml")
-
-    # 提取当前根目录最后一个文件夹名称
+    data_yaml = os.path.join(root_dir, "data.yaml")
     last_folder = os.path.basename(root_dir)
-
-    # 设置保存路径和项目名称
-    project_root = f"D:/YOLO_Benchmark/saved_models/{last_folder}"
     project_name = f"{last_folder}_yolo7"
+    save_dir = f"D:/YOLO_Benchmark/saved_models/{last_folder}"
 
-    # 加载模型
-    model = YOLO("yolov7.pt")  # 载入预训练模型
+    command = [
+        "python", train_script,
+        "--weights", "yolov7.pt",
+        "--cfg", "cfg/training/yolov7.yaml",
+        "--data", data_yaml,
+        "--device", "0",
+        "--batch-size", "32",
+        "--epochs", "300",
+        "--img", "640",
+        "--project", save_dir,
+        "--name", project_name,
+        "--exist-ok"
+    ]
 
-    # 训练模型
-    train_results = model.train(
-        data=data_yaml_path,
-        epochs=300,               # 训练轮数
-        imgsz=640,                # 训练图像大小
-        batch=32,                 # 批次大小
-        device="0",               # 使用GPU (0 表示第一个GPU)
-        lr0=0.01,                 # 初始学习率
-        augment=True,             # 启用数据增强
-        translate=0.1,            # 设置平移增强
-        scale=0.5,                # 设置缩放增强
-        fliplr=0.5,               # 水平翻转概率
-        hsv_h=0.015,              # 色相抖动
-        hsv_s=0.7,                # 饱和度抖动
-        hsv_v=0.4,                # 亮度抖动
-        mosaic=True,              # 启用马赛克数据增强
-        project=project_root,     # 动态设置保存项目的根目录
-        name=project_name,        # 动态设置项目名称
-        workers=0,                # 单进程数据加载
-        save=True,                
-        save_period=0             
-    )
-
-    print(f"训练完成: {project_name}")
+    print(f"Training: {project_name}")
+    subprocess.run(command, cwd=yolov7_dir)
+    print(f"Completed: {project_name}")
