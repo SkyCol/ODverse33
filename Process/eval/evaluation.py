@@ -2,47 +2,47 @@ import os
 import pandas as pd
 from ultralytics import YOLO
 
-# 设置根目录和数据集的 YAML 文件路径
+# Set the root directory and the path to the dataset's YAML file
 root_dir = r"D:\YOLO_Benchmark\saved_models\brain-tumor"
-data_yaml = r"D:\YOLO_Benchmark\medical\brain-tumor\data.yaml"  # 请根据实际情况修改
+data_yaml = r"D:\YOLO_Benchmark\medical\brain-tumor\data.yaml"  # Modify this path as needed
 
-# 存储所有评估结果的列表
+# A list to store all evaluation results
 all_results = []
 
-# 遍历根目录下的所有子目录
+# Traverse all subdirectories under the root directory
 for subdir, _, files in os.walk(root_dir):
-    # 检查子目录是否包含 weights/best.pt 文件
+    # Check if the subdirectory contains weights/best.pt
     if 'weights' in subdir and 'best.pt' in files:
         model_path = os.path.join(subdir, 'best.pt')
         
-        # 获取模型名称（例如 "BCCD_yolo8n"）
+        # Extract the model name (e.g., "BCCD_yolo8n")
         model_name = os.path.basename(os.path.dirname(subdir))
 
-        # 打印模型名称和路径
-        print(f"正在评估模型: {model_name} - 路径: {model_path}")
+        # Print model name and path
+        print(f"Evaluating model: {model_name} - Path: {model_path}")
 
-        # 加载模型
+        # Load the model
         model = YOLO(model_path)
 
-        # 在测试集上进行评估
+        # Evaluate on the test set
         test_results = model.val(
             data=data_yaml,
             split='test',
             imgsz=640,
-            device="cuda",  # 使用 GPU
+            device="cuda",  # Use GPU
             workers=0
         )
 
-        # 从 box 对象中获取评估结果，包括 mAP@50 和 mAP@50-95
+        # Retrieve evaluation results from the box object, including mAP@50 and mAP@50-95
         mp, mr, map50, map50_95 = test_results.box.mean_results()
         
-        # 直接访问 maps 属性，该属性为 numpy 数组
+        # Directly access the maps attribute, which is a NumPy array
         maps = test_results.box.maps
         
-        # 单独记录 mAP@75
-        map75 = maps[2] if len(maps) > 2 else None  # 索引 2 可能代表 mAP@75
+        # Record mAP@75 separately
+        map75 = maps[2] if len(maps) > 2 else None  # Index 2 might represent mAP@75
 
-        # 保存当前模型的评估结果
+        # Save the evaluation results for the current model
         detailed_results = {
             "Model": model_name,
             "Mean Precision": mp,
@@ -52,15 +52,15 @@ for subdir, _, files in os.walk(root_dir):
             "mAP@50-95": map50_95
         }
         
-        # 将当前模型的评估结果添加到总结果列表
+        # Add the current model's results to the overall list
         all_results.append(detailed_results)
 
-        # 输出评估结果
-        print(f"{model_name} 测试集评估结果:")
+        # Print the evaluation results
+        print(f"{model_name} test set evaluation results:")
         print(pd.DataFrame([detailed_results]))
         print("\n" + "-" * 50 + "\n")
 
-# 如果找到有效的模型评估结果，则合并并保存
+# If there are valid model evaluation results, combine and save them
 if all_results:
     final_results_df = pd.DataFrame(all_results)
     save_dir = r"D:\YOLO_Benchmark\saved_evaluation"
@@ -68,6 +68,6 @@ if all_results:
         os.makedirs(save_dir)
     save_path = os.path.join(save_dir, f"yolo_models_evaluation_{os.path.basename(root_dir.rstrip(os.sep))}.xlsx")
     final_results_df.to_excel(save_path, index=False)
-    print(f"所有模型的评估结果已保存至: {save_path}")
+    print(f"All model evaluation results have been saved to: {save_path}")
 else:
-    print("未找到任何符合条件的模型文件进行评估。")
+    print("No valid model files found for evaluation.")
