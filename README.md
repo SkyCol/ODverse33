@@ -41,7 +41,7 @@ Results on our validation and test data/ or on the COCO validation set (traditio
   <img src="https://github.com/user-attachments/assets/296d5550-90f0-4205-9d5b-e7b9545aed4a" width="800" height="auto">
 </p>    
 
-Results on the test sets (averaged on 11 domains):
+Overall result on the test sets in ODverse33 (averaged on 11 domains):
 <p align="left">
   <img src="https://github.com/user-attachments/assets/7830d3e1-19ae-477b-9565-faa515b378d8" width="80%" height="auto">
 </p>
