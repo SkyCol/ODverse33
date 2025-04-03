@@ -5,11 +5,13 @@ This benchmark provides a multi-domain evaluation for YOLO models, ranging from 
 
 Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11**" is released on [*Arxiv*](http://arxiv.org/abs/2502.14314). 
 
-Overall Results on all 11 domains:
+History of YOLO series model:    
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/e9befecb-a13d-44c7-b1d4-51c0fbeac3f1" width="100%" height="auto">
-</p>
+</p>    
+
+Overall Results on all 11 domains:
 
 <p align="left">
   <img src="https://github.com/user-attachments/assets/296d5550-90f0-4205-9d5b-e7b9545aed4a" width="800" height="auto">
