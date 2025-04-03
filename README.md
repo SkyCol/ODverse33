@@ -17,7 +17,7 @@ A Timeline of YOLO series detectors from v1 to v11:
 </p>
 
 
-![Image](https://github.com/user-attachments/assets/88232d7c-eb97-4a6b-b162-eda543721599)
+![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
 
 
 ODverse33 is a comprehensive benchmark that includes 33 datasets spanning 11 diverse domains :
