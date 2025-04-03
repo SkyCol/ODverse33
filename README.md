@@ -7,7 +7,7 @@ Newer YOLO versions are not always better!
 It provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5 to YOLOv11**.      
 
 
-Our paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).  
+The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).  
 
 
 A Timeline of YOLO series detectors from v1 to v11:    
@@ -16,8 +16,6 @@ A Timeline of YOLO series detectors from v1 to v11:
   <img src="https://github.com/user-attachments/assets/76c06acb-6029-4402-b858-38d0cca41046" width="100%" height="200%">
 </p>
 
-
-**ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11** diverse domains :
 
 ![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
 
