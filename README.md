@@ -13,7 +13,7 @@ A Timeline of YOLO series detectors from v1 to v11:
   <img src="https://github.com/user-attachments/assets/76c06acb-6029-4402-b858-38d0cca41046" width="100%" height="200%">
 </p>
 
-Results on ODverse 33 test sets and COCO validation sets
+Results on ODverse 33 test sets and COCO validation set:
 ![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
 
 ### 🌐 Covered Domains
