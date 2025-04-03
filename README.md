@@ -1,7 +1,8 @@
 # ODverse33
 Newer YOLO versions are not always better!
   
-This benchmark provides a multi-domain evaluation for YOLO models, ranging from YOLOv5 to YOLOv11. 
+This benchmark provides a multi-domain evaluation for YOLO models, ranging from YOLOv5 to YOLOv11.    
+
 Paper entitled "**ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11**" is released on [*Arxiv*](http://arxiv.org/abs/2502.14314).   
 
 <p align="left">
