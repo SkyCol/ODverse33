@@ -13,11 +13,11 @@ Our paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain B
 A Timeline of YOLO series detectors from v1 to v11:    
 
 <p align="left">
-  <img src="https://github.com/user-attachments/assets/e9befecb-a13d-44c7-b1d4-51c0fbeac3f1" width="100%" height="auto">
+  <img src="https://github.com/user-attachments/assets/76c06acb-6029-4402-b858-38d0cca41046" width="100%" height="200%">
 </p>
 
 
-ODverse33 is a comprehensive benchmark that includes 33 datasets spanning 11 diverse domains :
+**ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11** diverse domains :
 
 ![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
 
