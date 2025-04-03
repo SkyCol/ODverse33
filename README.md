@@ -17,10 +17,9 @@ A Timeline of YOLO series detectors from v1 to v11:
 </p>
 
 
-![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
-
-
 ODverse33 is a comprehensive benchmark that includes 33 datasets spanning 11 diverse domains :
+
+![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
 
 ### 🌐 Covered Domains
 
@@ -47,6 +46,10 @@ ODverse33 is a comprehensive benchmark that includes 33 datasets spanning 11 div
   </tr>
 </table>
 
+
+
+
+
 ---
 
 ### 📊 YOLOv5 - YOLOv11 Performance Comparison (mAP)
@@ -59,7 +62,6 @@ ODverse33 is a comprehensive benchmark that includes 33 datasets spanning 11 div
 | **mAP<sub>medium</sub>**      | 0.5512 | 0.5007 | 0.5461 | 0.5459 | 0.5568 | 0.5472  | **0.5588** |
 | **mAP<sub>large</sub>**       | 0.6708 | 0.6273 | 0.6687 | 0.6735 | **0.6770** | 0.6681  | 0.6769  |
 
---- 
 More detailed results for 11 diverse domains and 33 datasets can be found in the paper.
 
 
