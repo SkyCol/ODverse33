@@ -24,7 +24,7 @@ Newer YOLO versions are not always better!
     <td></td>
   </tr>
 </table>
-It provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5 to YOLOv11**.    
+It provides a multi-domain evaluation for YOLO models, ranging from **YOLOv5 to YOLOv11**.    
 
     
 Our paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).  
