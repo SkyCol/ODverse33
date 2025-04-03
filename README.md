@@ -50,7 +50,7 @@ A Timeline of YOLO series detectors from v1 to v11:
 
 ---
 
-### 📊 YOLOv5 - YOLOv11 Performance Comparison (mAP)
+### 📊 YOLOv5 - YOLOv11 overall Performance on ODverse33 test sets (mAP)
 
 | Metric              | YOLOv5 | YOLOv6 | YOLOv7 | YOLOv8 | YOLOv9 | YOLOv10 | YOLOv11 |
 |---------------------|--------|--------|--------|--------|--------|---------|---------|
