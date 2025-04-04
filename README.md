@@ -4,8 +4,9 @@ Newer YOLO versions are not always better!
 **ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains**. It provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5 to YOLOv11**.      
 
 
-The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).  
+The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).      
 
+We are making some updates and the datasets will be released soon.
 
 A Timeline of YOLO series detectors from v1 to v11:    
 
