@@ -1,6 +1,10 @@
 # ODverse33
 Newer YOLO versions are not always better!     
 
+**April 6, 2025 Update:** Fixed little errors in the manuscript. Updated the manuscript and its figures using Latex to make it easier to read.
+
+Newer YOLO versions are not always better!
+
 **ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains**. It provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5 to YOLOv11**.      
 
 
