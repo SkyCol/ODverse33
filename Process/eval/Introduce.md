@@ -1,1 +1,2 @@
 ## data evaluation
+In terms of evaluation, the `eval_SML2.py` script is first used to generate the predicted results in JSON format, which are then compared against the ground-truth annotations of the test set. Subsequently, the `pycocotools` library is employed to perform a standard COCO-style evaluation. Key metrics are computed and reported, including `mAP_0.50`, `mAP_0.50:0.95`, as well as scale-specific metrics such as `mAP_small`, `mAP_medium`, and `mAP_large`.
