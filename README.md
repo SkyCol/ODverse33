@@ -9,6 +9,8 @@ The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain B
 
 **April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. The updated paper is currently in replacement procedure.
 
+
+        
 A Timeline of YOLO series detectors from v1 to v11:    
 
 <p align="left">
