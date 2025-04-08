@@ -6,20 +6,6 @@ Newer YOLO versions are not always better!
 The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).      
 
 
-
-**April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. 
-
-
-        
-A Timeline of YOLO series detectors from v1 to v11:    
-
-<p align="left">
-  <img src="https://github.com/user-attachments/assets/76c06acb-6029-4402-b858-38d0cca41046" width="100%" height="200%">
-</p>
-
-Results on ODverse 33 test sets and COCO validation set:
-![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
-
 ### 🌐 Covered Domains
 
 <table>
@@ -46,6 +32,21 @@ Results on ODverse 33 test sets and COCO validation set:
 </table>
 
 
+
+
+
+**April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. 
+
+
+        
+A Timeline of YOLO series detectors from v1 to v11:    
+
+<p align="left">
+  <img src="https://github.com/user-attachments/assets/76c06acb-6029-4402-b858-38d0cca41046" width="100%" height="200%">
+</p>
+
+Results on ODverse 33 test sets and COCO validation set:
+![Image](https://github.com/user-attachments/assets/ad4dbdee-dcdc-4d71-9d4a-6b26fe9d7878)
 
 
 
