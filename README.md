@@ -5,7 +5,7 @@ Newer YOLO versions are not always better!
 
 The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain Benchmark from YOLO v5 to v11"**, is now available on [*ArXiv*](http://arxiv.org/abs/2502.14314).      
 
-*Notice: We are making some updates and the datasets will be released soon.*    
+
 
 **April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. 
 
