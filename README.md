@@ -1,5 +1,5 @@
 # ODverse33
-Newer YOLO versions are not always better!     
+**Newer YOLO versions are not always better!** 
 
 **ODverse33** is a comprehensive benchmark that includes **33 datasets** spanning **11 diverse domains**. It provides a **multi-domain evaluation** for YOLO models, ranging from **YOLOv5 to YOLOv11**.      
 
