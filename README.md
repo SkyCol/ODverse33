@@ -7,7 +7,7 @@ The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain B
 
 *Notice: We are making some updates and the datasets will be released soon.*    
 
-**April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. The updated paper is currently in replacement procedure.
+**April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. 
 
 
         
