@@ -32,7 +32,7 @@ The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain B
 </table>
 
 
-The datasets, which are divided into 11 domains, can be downloaded from *Kaggle* XX Domain in ODverse33.
+The datasets, which are divided into 11 domains, can be downloaded from *Kaggle*, while they are entitled *XX Domain in ODverse33*.
 - 🚗 [Autonomous Driving](https://www.kaggle.com/datasets/skycol/autonomous-driving-domain-in-odverse33)  
 - 🌾 [Agricultural](https://www.kaggle.com/datasets/skycol/agricultural-domain-in-odverse33)  
 - 🌊 [Underwater](https://www.kaggle.com/datasets/skycol/underwater-domain-in-odverse33)  
