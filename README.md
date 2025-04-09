@@ -32,8 +32,29 @@ The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain B
 </table>
 
 
-
-
+The datasets, which are divided into 11 domains, can be downloaded from *Kaggle* XX Domain in ODverse33.
+[Autonomous driving](https://www.kaggle.com/datasets/skycol/autonomous-driving-domain-in-odverse33)
+[Agricultural](https://www.kaggle.com/datasets/skycol/agricultural-domain-in-odverse33)
+[Underwater](https://www.kaggle.com/datasets/skycol/underwater-domain-in-odverse33)
+[Medical](https://www.kaggle.com/datasets/skycol/medical-domain-in-odverse33)
+[Videogame](https://www.kaggle.com/datasets/skycol/videogame-domain-in-odverse33)
+[Industrial](https://www.kaggle.com/datasets/skycol/industrial-domain-in-odverse33)
+[Aerial](https://www.kaggle.com/datasets/skycol/aerial-domain-in-odverse33)
+[Wildlife](https://www.kaggle.com/datasets/skycol/wildlife-domain-in-odverse33)
+[Retail](https://www.kaggle.com/datasets/skycol/retail-domain-in-odverse33)
+[Microscopic](https://www.kaggle.com/datasets/skycol/microscopic-domain-in-odverse33)
+[Security](https://www.kaggle.com/datasets/skycol/security-domain-in-odverse33)
+- 🚗 [Autonomous Driving](https://www.kaggle.com/datasets/skycol/autonomous-driving-domain-in-odverse33)  
+- 🌾 [Agricultural](https://www.kaggle.com/datasets/skycol/agricultural-domain-in-odverse33)  
+- 🌊 [Underwater](https://www.kaggle.com/datasets/skycol/underwater-domain-in-odverse33)  
+- 🏥 [Medical](https://www.kaggle.com/datasets/skycol/medical-domain-in-odverse33)  
+- 🎮 [Video Game](https://www.kaggle.com/datasets/skycol/videogame-domain-in-odverse33)  
+- 🏭 [Industrial](https://www.kaggle.com/datasets/skycol/industrial-domain-in-odverse33)  
+- 🛰️ [Aerial](https://www.kaggle.com/datasets/skycol/aerial-domain-in-odverse33)  
+- 🐾 [Wildlife](https://www.kaggle.com/datasets/skycol/wildlife-domain-in-odverse33)  
+- 🛒 [Retail](https://www.kaggle.com/datasets/skycol/retail-domain-in-odverse33)  
+- 🔬 [Microscopic](https://www.kaggle.com/datasets/skycol/microscopic-domain-in-odverse33)  
+- 🛡️ [Security](https://www.kaggle.com/datasets/skycol/security-domain-in-odverse33)
 
 **April 6, 2025 Update:** Fixed minor errors in the manuscript. Updated the manuscript and its figures using LaTeX to make it easier to read. 
 
@@ -66,22 +87,6 @@ The paper, **"ODVerse33: Is the New YOLO Version Always Better? A Multi-Domain B
 
 ---
 
-
-
-The datasets, which are divided into 11 domains, can be downloaded from *Kaggle* XX Domain in ODverse33.
-[Autonomous driving]()
-[Agricultural]()
-[Aerial](https://www.kaggle.com/datasets/skycol/aerial-domain-in-odverse33)
-[Agricultural](https://www.kaggle.com/datasets/skycol/agricultural-domain-in-odverse33)
-[Underwater](https://www.kaggle.com/datasets/skycol/underwater-domain-in-odverse33)
-[Medical](https://www.kaggle.com/datasets/skycol/medical-domain-in-odverse33)
-[Videogame](https://www.kaggle.com/datasets/skycol/videogame-domain-in-odverse33)
-[Industrial](https://www.kaggle.com/datasets/skycol/industrial-domain-in-odverse33)
-[Aerial](https://www.kaggle.com/datasets/skycol/aerial-domain-in-odverse33)
-[Wildlife](https://www.kaggle.com/datasets/skycol/wildlife-domain-in-odverse33)
-[Retail](https://www.kaggle.com/datasets/skycol/retail-domain-in-odverse33)
-[Microscopic](https://www.kaggle.com/datasets/skycol/microscopic-domain-in-odverse33)
-[Security](https://www.kaggle.com/datasets/skycol/security-domain-in-odverse33)
 
 
 
