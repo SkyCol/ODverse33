@@ -76,7 +76,8 @@ The datasets, which are divided into 11 domains, can be downloaded from *Kaggle*
 
 ---
 
-
+Test Results were under COCO standard (across a range of confidence
+ thresholds—from 0.0 to 1.0 in 0.01 increments)
 
 
 
